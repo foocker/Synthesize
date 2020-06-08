@@ -50,9 +50,9 @@ def double_test():
         registry_index(way_index1)
         registry_index(way_index2)
         print('registry complete')
-    index2 = faiss.read_index('/aidata/dataset/cigarette/fassi_lab/cig_index_surf_adddata')
+    index2 = faiss.read_index('')
 
-    index1 = faiss.read_index_binary('/aidata/dataset/cigarette/fassi_lab/cig_index_orb_b1_num100_adddata')
+    index1 = faiss.read_index_binary('')
     print('get index')
     FI1 = FaissIndex(index1, way_index1, False)
     FI2 = FaissIndex(index2, way_index2, False)

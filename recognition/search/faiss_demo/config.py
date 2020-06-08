@@ -1,17 +1,5 @@
 DEBUG = True
 
-def GET_FAISS_RESOURCES():
-    return None
-
-
-def GET_FAISS_INDEX():
-    raise NotImplementedError
-
-
-def GET_FAISS_ID_TO_VECTOR():
-    raise NotImplementedError
-
-
 UPDATE_FAISS_AFTER_SECONDS = None
 
 IMAGESEARCH_TMP = "/tmp/search/"
@@ -57,12 +45,11 @@ INDEX_KEY = "IDMap,Flat"
 # INDEX_KEY = "IDMap,OPQ16_64,IMI2x12,PQ8+16"
 USE_GPU = False    # slower?
 
-train_image_dir = "/aidata/dataset/cigarette/etmoc_en_2/train"
-# test_img_dir = "/aidata/dataset/cigarette/etmoc_en_2/test"
-test_img_dir = "/aidata/dataset/cigarette/etmoc_en_2/image"
-index_path = "/aidata/dataset/cigarette/fassi_lab/cig_index_surf_adddata"    # cig_index is the index binary file
+train_image_dir = ""
+test_img_dir = ""
+index_path = ""    # 
 # ids_vectors_path = '/faiss_service/resources/ids_paths_vectors'
-ids_path = '/aidata/dataset/cigarette/cig_ids_paths.pkl'
+ids_path = '*.pkl'
 
 # ---------------------  Search
 TOP_SEARCH = 5
